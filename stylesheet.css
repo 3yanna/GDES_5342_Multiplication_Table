@@ -1,22 +1,28 @@
-
 section.container {
     width: 70vw;
     height: 100vh;
     margin: 0 auto;
+
 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 
+
+    color: lightpink;
+
+
     .generate-box {
         display: flex;
         gap: 10px;
+
 
         .inputs {
             display: flex;
             flex-direction: column;
             gap: 5px;
+
 
             label {
                 display: flex;
@@ -26,18 +32,19 @@ section.container {
         }
     }
 
+
     #output {
-        overflow: scroll;
-        max-width: 90vw;
-        max-height: 60vh;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
 
-        table {
-            border: 1px solid black;
 
-            td {
-                padding: 2px;
-                text-align: center;
-            }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
         }
     }
 }
+
